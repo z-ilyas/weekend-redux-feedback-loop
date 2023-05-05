@@ -30,9 +30,9 @@ function App() {
         <Route exact path = '/Comments'>
           <Comments/>
         </Route>
-        {/* <Route>
+        <Route exact path = '/Review'>
           <Review/>
-        </Route>        */}
+        </Route>       
         {/* <Route>
           <Feedbackpage/>
         </Route> */}
