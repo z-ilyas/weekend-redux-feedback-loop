@@ -21,9 +21,9 @@ function App() {
         <Route exact path = '/'>
           <Feelings/>
         </Route>
-        {/* <Route>
+        <Route exact path = '/Understanding'>
           <Understanding/>
-        </Route> */}
+        </Route>
         {/* <Route>
           <Support/>
         </Route> */}

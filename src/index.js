@@ -7,8 +7,14 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
 
-const feedBack = {}
+const feedBack = {};
+
 const feelings = (state = feedBack, action) => {
+    if(action.type === 'ADD_FEELINGS'){
+    const copyOfState = {...state};
+        copyOfState.feelings = action.payload;
+    return copyOfState
+    }
     return state;
 }
 

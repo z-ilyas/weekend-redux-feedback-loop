@@ -1,9 +1,9 @@
 1. ( ) Has 4 routes 
     - ( )route - 1
-        - ( ) Has Head Text ('How are you feeling today?')
-        - ( ) Has a small text above the input saying ('Feeling?')
+        - (x) Has Head Text ('How are you feeling today?')
+        - (x) Has a small text above the input saying ('Feeling?')
         - ( ) Input that just takes Number (1-5)
-        - ( ) Next button for the next Page
+        - (x) Next button for the next Page
 
     - ( )route - 2
         - ( ) Has Head Text ('How well are you understanding the content?')

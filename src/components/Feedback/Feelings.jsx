@@ -1,12 +1,20 @@
 import { useState } from "react";
-// import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useHistory } from "react-router-dom";
 
 function Feelings() {
 
-    const [ feelings, setfeelings] = useState('')
-    // const feelingsObj = useSelector( (store) => store.feelings );
+    const [ feelings, setfeelings] = useState('');
+    const history = useHistory();
+    const dispatch = useDispatch();
 
-    // const dispatch = useDispatch();
+    const newFeelings = () => {
+        dispatch({
+            type: 'ADD_FEELINGS',
+            payload: feelings
+        })
+        history.push('/Understanding');
+    }
     
     return (
         <div className="feelings">
@@ -17,7 +25,7 @@ function Feelings() {
                 value={feelings}
                 onChange={ (event) => {setfeelings(event.target.value)}}
             />
-            <button>NEXT</button>
+            <button onClick={newFeelings}>NEXT</button>
         </div>
     )
 }
