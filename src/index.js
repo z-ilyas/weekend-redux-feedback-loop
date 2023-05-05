@@ -18,8 +18,16 @@ const feedback = (state = feedBack, action) => {
         const copyOfState = {...state};
         copyOfState.understanding = action.payload;
     return copyOfState
+    }else if(action.type === 'ADD_SUPPORT'){
+        const copyOfState = {...state};
+        copyOfState.support = action.payload;
+    return copyOfState
+    }else if(action.type === 'ADD_COMMENTS'){
+        const copyOfState = {...state};
+        copyOfState.comments = action.payload;
+    return copyOfState
     }
-    return state;
+return state;
 }
 
 const theStore = createStore(

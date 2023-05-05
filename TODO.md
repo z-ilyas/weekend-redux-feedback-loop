@@ -6,22 +6,22 @@
         - (x) Next button for the next Page
 
     - ( )route - 2
-        - ( ) Has Head Text ('How well are you understanding the content?')
-        - ( ) Has a small text above the input saying ('Understanding?')
+        - (x) Has Head Text ('How well are you understanding the content?')
+        - (x) Has a small text above the input saying ('Understanding?')
         - ( ) Input that just takes Number (1-5)
-        - ( ) Next button for the next Page
+        - (x) Next button for the next Page
 
     - ( )route - 3
-        - ( ) Has Head Text ('How well are you being supported?')
-        - ( ) Has a small text above the input saying ('Support?')
+        - (x) Has Head Text ('How well are you being supported?')
+        - (x) Has a small text above the input saying ('Support?')
         - ( ) Input that just takes Number (1-5)
-        - ( ) Next button for the next Page
+        - (x) Next button for the next Page
 
-    - ( )route - 4
-        - ( ) Has Head Text ('Any Comments you want to leave?')
-        - ( ) Has a small text above the input saying ('Comments')
-        - ( ) Input that just takes text
-        - ( ) Next button for the next Page
+    - (x)route - 4
+        - (x) Has Head Text ('Any Comments you want to leave?')
+        - (x) Has a small text above the input saying ('Comments')
+        - (x) Input that just takes text
+        - (x) Next button for the next Page
     
 2. ( ) Alerts (Route 4 does not need Alerts)
     - ( )route - 1
@@ -65,27 +65,27 @@ Actual Coding
     - Make next page and use history  - (DONE)
         - Make alert if there is no Input - (DONE)
 - Make Component for Route 2 
-    - Export to App 
-    - Make Text for DOM
+    - Export to App - (DONE)
+    - Make Text for DOM - (DONE)
     - Input for DOM (limit Number to 5)
-    - Make a dispatch to Reducer for the data from Input
-    - Make next page and use history 
-        - Make alert if there is no Input
+    - Make a dispatch to Reducer for the data from Input - (DONE)
+    - Make next page and use history  - (DONE)
+        - Make alert if there is no Input - (DONE)
 - Make Component for Route 3
-    - Export to App 
-    - Make Text for DOM
-    - Input for DOM (limit Number to 5)
-    - Make a dispatch to Reducer for the data from Input
-    - Make next page and use history 
-        - Make alert if there is no Input
+    - Export to App  - (DONE)
+    - Make Text for DOM - (DONE)
+    - Input for DOM (limit Number to 5) 
+    - Make a dispatch to Reducer for the data from Input  - (DONE)
+    - Make next page and use history  - (DONE)
+        - Make alert if there is no Input  - (DONE)
 - Make Component for Route 4 
-    - Export to App 
-    - Make Text for DOM 
-    - Input for DOM 
-    - Make a dispatch to Reducer for the data from Input
-    - Make next page and use history 
+    - Export to App - (DONE)
+    - Make Text for DOM  - (DONE)
+    - Input for DOM  - (DONE)
+    - Make a dispatch to Reducer for the data from Input - (DONE)
+    - Make next page and use history - (DONE)
 - Make the Review Component
-    <!-- - Export to App  --> 
+    - Export to App  
     - User should not be able to change anything on here
     - useSelector to get the value of all the 4 routes
     - Make Text for DOM

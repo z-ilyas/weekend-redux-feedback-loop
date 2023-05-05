@@ -24,12 +24,12 @@ function App() {
         <Route exact path = '/Understanding'>
           <Understanding/>
         </Route>
-        <Route xact path = '/Support'>
+        <Route exact path = '/Support'>
           <Support/>
         </Route>
-        {/* <Route>
+        <Route exact path = '/Comments'>
           <Comments/>
-        </Route> */}
+        </Route>
         {/* <Route>
           <Review/>
         </Route>        */}

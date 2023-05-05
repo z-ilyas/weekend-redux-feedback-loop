@@ -9,8 +9,8 @@ function Feelings() {
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const clickNext = () => {
-        if( feelings === ''){
+    const goToUnderstanding = () => {
+        if(feelings === ''){
             Swal.fire({
                 icon: 'error',
                 title: 'PLEASE PUT INPUT',
@@ -33,7 +33,7 @@ function Feelings() {
                 value={feelings}
                 onChange={(event) => {setfeelings(event.target.value)}}
             />
-            <button onClick={clickNext}>NEXT</button>
+            <button onClick={goToUnderstanding}>NEXT</button>
         </div>
     )
 }

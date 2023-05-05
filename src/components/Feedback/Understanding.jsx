@@ -5,12 +5,12 @@ import Swal from "sweetalert2";
 
 function Understanding () {
 
-    const [understanding, setunderstanding] = useState('');
+    const [understanding, setUnderstanding] = useState('');
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const clickNext = () => {
-        if( understanding === ''){
+    const goToSupport = () => {
+        if(understanding === ''){
             Swal.fire({
                 icon: 'error',
                 title: 'PLEASE PUT INPUT',
@@ -31,9 +31,9 @@ function Understanding () {
             <input
                 type="number"
                 value={understanding}
-                onChange={(event) => {setunderstanding(event.target.value)}}
+                onChange={(event) => {setUnderstanding(event.target.value)}}
             />
-            <button onClick={clickNext}>NEXT</button>     
+            <button onClick={goToSupport}>NEXT</button>     
         </div>
     )
     
