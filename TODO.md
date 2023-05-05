@@ -94,6 +94,7 @@ Actual Coding
     - Make Submit Button
         - use axios Post to send the Info to the Server and the Database
 - Make Feedback Component 
+    - Export to App 
     - Make 2 boxes
         - 1st box with some Text
         - 2nd box 
