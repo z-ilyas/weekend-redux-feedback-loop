@@ -58,12 +58,12 @@ Actual Coding
 - Make Routes in App.js
     - Comment Out Routes till they are ready
 - Make Component for Route 1 
-    - Export to App 
-    - Make Text for DOM
+    - Export to App - (DONE)
+    - Make Text for DOM - (DONE)
     - Input for DOM (limit Number to 5)
-    - Make a dispatch to Reducer for the data from Input
-    - Make next page and use history 
-        - Make alert if there is no Input
+    - Make a dispatch to Reducer for the data from Input - (DONE)
+    - Make next page and use history  - (DONE)
+        - Make alert if there is no Input - (DONE)
 - Make Component for Route 2 
     - Export to App 
     - Make Text for DOM

@@ -1,16 +1,15 @@
 import { useState } from "react";
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import Swal from "sweetalert2";
 
 function Feelings() {
     
-    // const feelingsObj = useSelector(state => state.feelings);
     const [feelings, setfeelings] = useState('');
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const noInput = () => {
+    const clickNext = () => {
         if( feelings === ''){
             Swal.fire({
                 icon: 'error',
@@ -22,11 +21,9 @@ function Feelings() {
                 payload: feelings
             })
             history.push('/Understanding');
-            noInput();
         }
     }
  
-    
     return (
         <div className="feelings">
             <h1>How are you Feeling today?</h1>
@@ -34,9 +31,9 @@ function Feelings() {
             <input
                 type="number"
                 value={feelings}
-                onChange={ (event) => {setfeelings(event.target.value)}}
+                onChange={(event) => {setfeelings(event.target.value)}}
             />
-            <button onClick={noInput}>NEXT</button>
+            <button onClick={clickNext}>NEXT</button>
         </div>
     )
 }

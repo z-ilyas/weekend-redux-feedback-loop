@@ -9,10 +9,14 @@ import { Provider } from 'react-redux';
 
 const feedBack = {};
 
-const feelings = (state = feedBack, action) => {
+const feedback = (state = feedBack, action) => {
     if(action.type === 'ADD_FEELINGS'){
     const copyOfState = {...state};
         copyOfState.feelings = action.payload;
+    return copyOfState
+    }else if(action.type === 'ADD_UNDERSTANDING'){
+        const copyOfState = {...state};
+        copyOfState.understanding = action.payload;
     return copyOfState
     }
     return state;
@@ -20,7 +24,7 @@ const feelings = (state = feedBack, action) => {
 
 const theStore = createStore(
     combineReducers({
-        feelings
+        feedback
     }),
     applyMiddleware(
       logger
