@@ -23,21 +23,21 @@
         - (x) Input that just takes text
         - (x) Next button for the next Page
     
-2. ( ) Alerts (Route 4 does not need Alerts)
-    - ( )route - 1
+2. (x) Alerts (Route 4 does not need Alerts)
+    - (x)route - 1
          - for user who presses Next without filling Input
-    - ( )route - 2
+    - (x)route - 2
         - for user who presses Next without filling Input
-    - ( )route - 3
+    - (x)route - 3
         - for user who presses Next without filling Input
     
 3. ( ) Review 
     - ( )route - 5
-        - ( ) Has Head Text ('Your Feedback')
-        - ( ) Has ('Feelings'): (input from Route 1 )
-        - ( ) Has ('Understanding'): ( input from Route 2 )
-        - ( ) Has ('Support'): ( input from Route 3 )
-        - ( ) Has ('Comments'): ( input from Route 4 )
+        - (x) Has Head Text ('Your Feedback')
+        - (x) Has ('Feelings'): (input from Route 1 )
+        - (x) Has ('Understanding'): ( input from Route 2 )
+        - (x) Has ('Support'): ( input from Route 3 )
+        - (x) Has ('Comments'): ( input from Route 4 )
         - ( ) Submit Button
             -  Save all info into the database 
 
@@ -85,13 +85,13 @@ Actual Coding
     - Make a dispatch to Reducer for the data from Input - (DONE)
     - Make next page and use history - (DONE)
 - Make the Review Component
-    - Export to App  
-    - User should not be able to change anything on here
-    - useSelector to get the value of all the 4 routes
-    - Make Text for DOM
-    - display in the DOM in this Format for Route 1 - 4 
-        - ('Feelings'): (input from Route 1)
-    - Make Submit Button
+    - Export to App  - (DONE)
+    - User should not be able to change anything on here  - (DONE)
+    - useSelector to get the value of all the 4 routes  - (DONE)
+    - Make Text for DOM  - (DONE)
+    - display in the DOM in this Format for Route 1 - 4  - (DONE)
+        - ('Feelings'): (input from Route 1)  - (DONE)
+- Make Submit Button
         - use axios Post to send the Info to the Server and the Database
 - Make Feedback Component 
     - Export to App 

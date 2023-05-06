@@ -33,9 +33,9 @@ function App() {
         <Route exact path = '/Review'>
           <Review/>
         </Route>       
-        {/* <Route>
+        <Route exact path = '/Feedbackpage'>
           <Feedbackpage/>
-        </Route> */}
+        </Route>
       </Router>
     </div>
   );
