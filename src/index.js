@@ -7,8 +7,6 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
 
-// const feedBack = {};
-
 const feedback = (state = {}, action) => {
     if(action.type === 'ADD_FEELINGS'){
     const copyOfState = {...state};
@@ -26,6 +24,8 @@ const feedback = (state = {}, action) => {
         const copyOfState = {...state};
         copyOfState.comments = action.payload;
     return copyOfState
+    }else if(action.type === 'RESET'){
+        return {};
     }
 return state;
 }
@@ -38,7 +38,6 @@ const theStore = createStore(
       logger
     )
   )
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -8,7 +8,6 @@ function Review () {
     const history = useHistory();
 
     const prettySure = () => {
-  
         axios({
             method: 'POST',
             url:'/Review', 
@@ -23,8 +22,6 @@ function Review () {
                 console.log(err);
             })
     } 
-
-
     return(
         <div className="Review">
             <h1>Review Your Feedback</h1>

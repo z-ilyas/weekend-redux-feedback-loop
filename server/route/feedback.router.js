@@ -7,6 +7,7 @@ router.post('/', (req, res) => {
     console.log('here is the data we got mailed:', req.body);
 
     let newFeeling = req.body.feedback.feelings;
+    console.log(req.body.feedback.feelings);
     let newUnderstanding = req.body.feedback.understanding;
     let newSupport = req.body.feedback.support;
     let newComments = req.body.feedback.comments;
